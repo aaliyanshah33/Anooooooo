@@ -11,31 +11,31 @@ const wishes = [
 
 const WishesSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background via-graffiti-purple/5 to-background overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 px-4 bg-gradient-to-b from-background via-graffiti-purple/5 to-background overflow-hidden">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="font-graffiti text-3xl sm:text-4xl md:text-5xl graffiti-text mb-4">
+        <h2 className="font-graffiti text-2xl sm:text-3xl md:text-4xl lg:text-5xl graffiti-text mb-3 sm:mb-4">
           Birthday Wishes
         </h2>
-        <p className="font-nunito text-lg text-muted-foreground mb-12">
+        <p className="font-nunito text-base sm:text-lg text-muted-foreground mb-8 sm:mb-12">
           Sending you all the best wishes! 🌈
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-12">
+        <div className="grid grid-cols-3 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 mb-8 sm:mb-12">
           {wishes.map((wish, index) => {
             const IconComponent = wish.icon;
             return (
               <div
                 key={wish.text}
-                className="graffiti-card flex flex-col items-center p-6 min-w-[120px] hover:scale-110 transition-transform duration-300"
+                className="graffiti-card flex flex-col items-center p-3 sm:p-4 md:p-6 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] hover:scale-110 transition-transform duration-300"
                 style={{ 
-                  animation: `float 6s ease-in-out infinite, slide-up 0.6s ease-out forwards`,
-                  animationDelay: `${index * 0.5}s, ${index * 0.1}s`,
+                  animation: `float 6s ease-in-out infinite`,
+                  animationDelay: `${index * 0.5}s`,
                 }}
               >
-                <div className={`${wish.color} mb-3`}>
-                  <IconComponent className="w-10 h-10 fill-current" />
+                <div className={`${wish.color} mb-2 sm:mb-3`}>
+                  <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 fill-current" />
                 </div>
-                <span className="font-nunito font-bold text-foreground">
+                <span className="font-nunito font-bold text-foreground text-xs sm:text-sm md:text-base">
                   {wish.text}
                 </span>
               </div>
@@ -43,32 +43,12 @@ const WishesSection = () => {
           })}
         </div>
 
-        {/* Decorative spray bubbles */}
-        <div className="relative h-32">
-          {[...Array(8)].map((_, i) => (
-            <div
-              key={i}
-              className={`absolute rounded-full ${
-                ["bg-graffiti-pink", "bg-graffiti-purple", "bg-graffiti-blue", "bg-graffiti-yellow", "bg-graffiti-mint"][i % 5]
-              } opacity-30`}
-              style={{
-                width: `${20 + Math.random() * 40}px`,
-                height: `${20 + Math.random() * 40}px`,
-                left: `${10 + (i * 12)}%`,
-                top: `${Math.random() * 60}%`,
-                animation: `float ${4 + Math.random() * 4}s ease-in-out infinite`,
-                animationDelay: `${i * 0.3}s`,
-              }}
-            />
-          ))}
-        </div>
-
         {/* Big wish message */}
-        <div className="graffiti-card bg-gradient-to-br from-graffiti-pink/10 via-graffiti-purple/10 to-graffiti-blue/10 border-4 border-graffiti-pink/30 animate-pulse-glow">
-          <p className="font-graffiti text-2xl sm:text-3xl md:text-4xl graffiti-text">
+        <div className="graffiti-card bg-gradient-to-br from-graffiti-pink/10 via-graffiti-purple/10 to-graffiti-blue/10 border-2 sm:border-4 border-graffiti-pink/30 animate-pulse-glow p-4 sm:p-6">
+          <p className="font-graffiti text-xl sm:text-2xl md:text-3xl lg:text-4xl graffiti-text leading-tight">
             Wishing you the happiest birthday ever!
           </p>
-          <p className="font-nunito text-xl mt-4 text-muted-foreground">
+          <p className="font-nunito text-base sm:text-lg md:text-xl mt-3 sm:mt-4 text-muted-foreground">
             May your 4th year be filled with adventures! 🎈🎁🎉
           </p>
         </div>
