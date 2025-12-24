@@ -47,7 +47,7 @@ const HeroSection = () => {
           className="font-nunito text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground/80 mb-8 sm:mb-10 animate-slide-up px-4"
           style={{ animationDelay: "0.8s" }}
         >
-          Our little star turns four 🎉✨
+          Our little Chuni Munni turns four 🎉✨
         </p>
 
         {/* CTA Button */}
