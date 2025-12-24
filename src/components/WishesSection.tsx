@@ -49,7 +49,7 @@ const WishesSection = () => {
             Wishing you the happiest birthday ever!
           </p>
           <p className="font-nunito text-base sm:text-lg md:text-xl mt-3 sm:mt-4 text-muted-foreground">
-            May your 4th year be filled with adventures! 🎈🎁🎉
+            Anno isi tarha Mama ko tang krti raha kro Heheheheheh 🎈🎁🎉
           </p>
         </div>
       </div>
