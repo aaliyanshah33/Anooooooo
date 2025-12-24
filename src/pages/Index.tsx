@@ -1,13 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import MessageWall from "@/components/MessageWall";
+import CountdownSection from "@/components/CountdownSection";
+import PhotoGallery from "@/components/PhotoGallery";
+import WishesSection from "@/components/WishesSection";
+import Footer from "@/components/Footer";
+import FloatingDoodles from "@/components/FloatingDoodles";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background overflow-x-hidden">
+      {/* Floating decorative elements */}
+      <FloatingDoodles />
+      
+      {/* Main sections */}
+      <HeroSection />
+      <CountdownSection />
+      <MessageWall />
+      <PhotoGallery />
+      <WishesSection />
+      <Footer />
+    </main>
   );
 };
 
