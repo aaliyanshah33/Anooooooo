@@ -16,14 +16,14 @@ const messages = [
     icon: Star,
   },
   {
-    text: "Keep dancing through life, sweet Anaya!",
+    text: "Keep enjoying through life, sweet Anaya!",
     author: "-",
     color: "border-graffiti-blue",
     bg: "bg-graffiti-blue/10",
     icon: Sparkles,
   },
   {
-    text: "You're the best little sister ever!",
+    text: "You're the best little Chunnniiii ever!",
     author: "-",
     color: "border-graffiti-mint",
     bg: "bg-graffiti-mint/10",
