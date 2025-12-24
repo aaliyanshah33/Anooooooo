@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* Year badge */}
         <div className="mt-6 sm:mt-8 inline-flex items-center gap-2 bg-muted/90 text-foreground px-4 sm:px-6 py-2 sm:py-3 rounded-full border-2 sm:border-4 border-graffiti-yellow shadow-[3px_3px_0px_hsl(var(--graffiti-yellow))]">
-          <span className="font-nunito font-bold text-sm sm:text-base">🎂 December 24, 2024 🎂</span>
+          <span className="font-nunito font-bold text-sm sm:text-base">🎂 December 24, 2025 🎂</span>
         </div>
 
         {/* Decorative elements */}
