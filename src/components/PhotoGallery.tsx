@@ -4,7 +4,7 @@ const photos = [
   { id: 1, caption: "First smile 💕", rotate: -3 },
   { id: 2, caption: "Birthday cake time! 🎂", rotate: 2 },
   { id: 3, caption: "Playing in the garden 🌸", rotate: -2 },
-  { id: 4, caption: "Dancing queen 👑", rotate: 4 },
+  { id: 4, caption: "Qween 👑", rotate: 4 },
   { id: 5, caption: "Sweet dreams 🌙", rotate: -4 },
   { id: 6, caption: "Best day ever! ✨", rotate: 1 },
 ];
